@@ -22,7 +22,14 @@ export const QuizContextProvider = ({ children }: QuizContextProviderProps) => {
   }, [quizItems])
 
   useEffect(() => {
-    setQuizItems([])
+    setQuizItems([0,1,2,3,4,5,6,7,8,9].map(() => {
+      return {
+        question: 'test',
+        choiceItems: [],
+        selectedAnswer: 1,
+        correctedAnswer: 1
+      }
+    }))
   }, [])
 
   return (

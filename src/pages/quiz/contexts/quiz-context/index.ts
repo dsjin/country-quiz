@@ -1,9 +1,5 @@
-import { createContext, useContext, useEffect, useMemo, useState, type ReactElement } from "react"
+import { createContext, useContext } from "react"
 import type { QuizItem } from "../../../../assets/types/quiz"
-
-type QuizContextProviderProps = {
-  children: ReactElement
-}
 
 export type QuizContextType = {
   quizItems: QuizItem[]
