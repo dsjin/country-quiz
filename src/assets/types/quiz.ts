@@ -1,7 +1,7 @@
 export type QuizItem = {
   question: string
   choiceItems: string[]
-  selectedAnswer: number
+  selectedAnswer: number | undefined
   correctedAnswer: number
 }
 

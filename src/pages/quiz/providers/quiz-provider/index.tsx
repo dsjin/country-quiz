@@ -25,8 +25,13 @@ export const QuizContextProvider = ({ children }: QuizContextProviderProps) => {
     setQuizItems([0,1,2,3,4,5,6,7,8,9].map(() => {
       return {
         question: 'test',
-        choiceItems: [],
-        selectedAnswer: 1,
+        choiceItems: [
+          'Choice1',
+          'Choice2',
+          'Choice3',
+          'Choice4'
+        ],
+        selectedAnswer: undefined,
         correctedAnswer: 1
       }
     }))
